@@ -6,7 +6,7 @@ from math import pi
 # Let's do an X-gate on a |0> qubit
 try:
     qc = QuantumCircuit(1)
-except ValueError:
+except KeyError:
     print("-")
 
 qc.x(0)

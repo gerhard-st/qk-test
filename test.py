@@ -4,11 +4,7 @@ from math import pi
 #from qiskit.visualization import plot_bloch_multivector
 
 # Let's do an X-gate on a |0> qubit
-try:
-    qc = QuantumCircuit(1)
-except:
-    print("-")
-
+qc = QuantumCircuit(1)
 qc.x(0)
 #qc.draw()
 

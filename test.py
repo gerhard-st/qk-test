@@ -17,7 +17,3 @@ print(out)
 qc.h(0)
 out = execute(qc,backend).result().get_statevector()
 print(out)
-
-#
-measure q[0] -> c[0];
-print(c)

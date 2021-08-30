@@ -6,7 +6,7 @@ from math import pi
 backend = Aer.get_backend('statevector_simulator')
 
 #
-qc = QuantumCircuit(1)
+qc = QuantumCircuit(1,1)
 
 #
 qc.x(0)
@@ -17,3 +17,8 @@ print(out)
 qc.h(0)
 out = execute(qc,backend).result().get_statevector()
 print(out)
+
+#
+qc.barrier()
+qc.measure(0,0)
+print(qc)
